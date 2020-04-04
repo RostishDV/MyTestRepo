@@ -1,15 +1,11 @@
 package rost.pasportapp;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.aws.autoconfigure.context.ContextRegionProviderAutoConfiguration;
-import org.springframework.context.annotation.ComponentScan;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-@ComponentScan
-@EnableAutoConfiguration
+@EnableSwagger2
 @SpringBootApplication
-//@SpringBootApplication(exclude = ContextRegionProviderAutoConfiguration.class)
 public class Application
 {
     public static void main(String[] args)
