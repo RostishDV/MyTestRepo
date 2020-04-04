@@ -20,8 +20,9 @@ public class Controller
                 "to get passport base send \"/get\"";
     }
 
+    //TODO: переименовать метод
     @RequestMapping(path = "/post", method = POST)
-    public Passport a(    @RequestParam(value="name", required=false, defaultValue="Dick") String name,
+    public Passport a(@RequestParam(value="name", required=false, defaultValue="Dick") String name,
                           @RequestParam(value="city", required=false, defaultValue="Cheboksary") String city,
                           @RequestParam(value="age", required=false, defaultValue="18") Integer age){
         Passport passport = new Passport(name, city, age);
